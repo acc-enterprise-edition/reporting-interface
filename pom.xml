@@ -7,7 +7,7 @@
     <packaging>jar</packaging>
 
     <groupId>com.acc</groupId>
-    <version>1.0</version>
+    <version>1.0.7</version>
     <artifactId>reporting-interface</artifactId>
 
     <properties>
@@ -36,7 +36,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/octocat/hello-world</url>
+            <url>https://maven.pkg.github.com/acc-enterprise-edition/reporting-interface</url>
         </repository>
     </distributionManagement>
 
