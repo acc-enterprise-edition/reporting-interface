@@ -24,6 +24,6 @@ public interface JasperExecutor {
      * @param outputType output format (pdf)
      * @return OutputStream with executed and filled report in specified format
      */
-    OutputStream executeReport(String reportName, HashMap<String, Object> parameters, Connection connection, OutputType outputType);
+    byte[] executeReport(String reportName, HashMap<String, Object> parameters, Connection connection, OutputType outputType);
 
 }

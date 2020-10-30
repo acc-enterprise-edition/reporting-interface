@@ -1,3 +1,3 @@
 package com.acc.reporting;
 
-public enum OutputType { PDF, EXCEL }
+public enum OutputType { PDF, XML }
