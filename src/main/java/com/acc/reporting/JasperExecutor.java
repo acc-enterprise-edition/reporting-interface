@@ -5,7 +5,7 @@ import java.io.OutputStream;
 import java.sql.Connection;
 import java.util.HashMap;
 
-public interface JasperReportsExecutor {
+public interface JasperExecutor {
 
     /**
      * Read report definition from stream (*.jrxml file),
@@ -24,6 +24,6 @@ public interface JasperReportsExecutor {
      * @param outputType output format (pdf)
      * @return OutputStream with executed and filled report in specified format
      */
-    OutputStream execute(String reportName, HashMap<String, Object> parameters, Connection connection, OutputType outputType);
+    OutputStream executeReport(String reportName, HashMap<String, Object> parameters, Connection connection, OutputType outputType);
 
 }
