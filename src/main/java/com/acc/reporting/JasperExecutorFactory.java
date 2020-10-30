@@ -2,7 +2,7 @@ package com.acc.reporting;
 
 public class JasperExecutorFactory {
     // synchronization helper
-    private static Object helper = new Object();
+    private static final Object helper = new Object();
 
     private static volatile JasperExecutor implementation = null;
 
