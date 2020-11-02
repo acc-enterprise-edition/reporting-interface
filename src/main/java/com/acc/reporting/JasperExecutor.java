@@ -1,9 +1,8 @@
 package com.acc.reporting;
 
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.sql.Connection;
-import java.util.HashMap;
+import java.util.Map;
 
 public interface JasperExecutor {
 
@@ -24,6 +23,6 @@ public interface JasperExecutor {
      * @param outputType output format (pdf)
      * @return OutputStream with executed and filled report in specified format
      */
-    byte[] executeReport(String reportName, HashMap<String, Object> parameters, Connection connection, OutputType outputType);
+    byte[] executeReport(String reportName, Map<String, Object> parameters, Connection connection, OutputType outputType);
 
 }
