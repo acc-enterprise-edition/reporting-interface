@@ -16,6 +16,6 @@ public interface ReportsExecutor {
      * @param outputType output format (pdf)
      * @return OutputStream with executed and filled report in specified format
      */
-    byte[] executeReport(String uuid, Map<String, Object> parameters, Connection connection, OutputType outputType);
+    byte[] executeReport(String uuid, Map<String, Object> parameters, Connection connection, ReportOutputType outputType);
 
 }
