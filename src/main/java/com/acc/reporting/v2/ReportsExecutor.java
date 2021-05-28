@@ -1,8 +1,5 @@
 package com.acc.reporting.v2;
 
-import com.acc.reporting.OutputType;
-
-import java.io.InputStream;
 import java.sql.Connection;
 import java.util.Map;
 

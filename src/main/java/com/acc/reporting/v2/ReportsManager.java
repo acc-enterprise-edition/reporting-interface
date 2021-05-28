@@ -13,10 +13,6 @@ public interface ReportsManager {
      */
     boolean registerReport(String uuid, InputStream reportStream);
 
-    boolean containsReport(String uuid);
-
-    boolean removeReport(String uuid);
-
     /**
      * Read report definition from stream (*.jrxml file),
      * compile it and register within internal cashe with uuid
@@ -26,4 +22,8 @@ public interface ReportsManager {
      */
     ReportBundle compileReport(String uuid, InputStream reportStream);
 
+    boolean removeReport(String uuid);
+
+    boolean containsReport(String uuid);
+    ReportBundle getReport(String uuid);
 }
