@@ -32,7 +32,7 @@ public class JasperExecutorFactory {
         if (instantiatorImpl == null) {
             // synchronized only if we need to create instance
             synchronized(instantiatorSync) {
-                if (instantiatorSync == null) {
+                if (instantiatorImpl == null) {
                     try {
                         var clazz = (Class<Instantiator>) Class.forName("com.acc.reporting.v2.impl.InstantiatorImpl");
                         instantiatorImpl = clazz.getDeclaredConstructor().newInstance();
