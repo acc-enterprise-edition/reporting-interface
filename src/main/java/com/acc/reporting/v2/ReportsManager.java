@@ -9,21 +9,21 @@ public interface ReportsManager {
      * compile it and register within internal cashe
      * Returns true if report registered successfully
      * @param reportStream a stream with report definition  (*.jrxml file)
-     * @return             the report name
+     * @throws IllegalArgumentException
      */
-    boolean registerReport(String uuid, InputStream reportStream);
+    void registerReport(String uuid, InputStream reportStream);
 
     /**
      * Read report definition from stream (*.jrxml file),
      * compile it and register within internal cashe with uuid
      * Returns report name, extracted from its definition
      * @param reportStream a stream with report definition  (*.jrxml file)
-     * @return             the report name
+     * @return ReportBundle
+     * @throws IllegalArgumentException
      */
     ReportBundle compileReport(String uuid, InputStream reportStream);
 
-    boolean removeReport(String uuid);
+    void removeReport(String uuid);
 
     boolean containsReport(String uuid);
-    ReportBundle getReport(String uuid);
 }
