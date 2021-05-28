@@ -15,6 +15,8 @@ public interface ReportsManager {
 
     boolean containsReport(String uuid);
 
+    boolean removeReport(String uuid);
+
     /**
      * Read report definition from stream (*.jrxml file),
      * compile it and register within internal cashe with uuid
