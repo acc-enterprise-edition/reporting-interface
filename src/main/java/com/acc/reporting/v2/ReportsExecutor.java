@@ -12,6 +12,7 @@ public interface ReportsExecutor {
      * @param connection connection to database
      * @param outputType output format (pdf)
      * @return OutputStream with executed and filled report in specified format
+     * @throws IllegalArgumentException
      */
     byte[] executeReport(String uuid, Map<String, String> parameters, Connection connection, ReportOutputType outputType);
 
